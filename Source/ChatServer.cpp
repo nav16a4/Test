@@ -1,25 +1,15 @@
 ﻿// ChatServer.cpp : 이 파일에는 'main' 함수가 포함됩니다. 거기서 프로그램 실행이 시작되고 종료됩니다.
 //
 #include "Precompiled.h"
-
-class App
-{
-public:
-    virtual void StartApp() { std::cout << "App::StartApp()"; }
-};
-class ServerApp : public App
-{
-public:
-    virtual void StartApp() {std::cout << "ServerApp::StartApp()";  }
-};
+#include "App.h"
 
 
 int main()
 {
     App* app = new ServerApp;
+    app->SetupApp();
     app->StartApp();
     delete app;
-
 }
 
 // 프로그램 실행: <Ctrl+F5> 또는 [디버그] > [디버깅하지 않고 시작] 메뉴

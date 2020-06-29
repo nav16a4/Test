@@ -1,14 +1,17 @@
 ﻿// ChatServer.cpp : 이 파일에는 'main' 함수가 포함됩니다. 거기서 프로그램 실행이 시작되고 종료됩니다.
 //
 #include "Precompiled.h"
+#include "Output.h"
 #include "App.h"
+#include "Util.h"
 
 
 int main()
 {
-    App* app = new ServerApp;
+    
+    App* app = new ClientApp;
     app->SetupApp();
-    app->StartApp();
+   // app->StartApp();
     delete app;
 }
 

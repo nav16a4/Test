@@ -32,3 +32,25 @@ void ServerApp::StartApp()
 	std::cout << My::GetNowTime();
 
 }
+
+void ClientApp::SetupApp()
+{
+	try
+	{
+		this->m_Network = new My::ClientNet;
+		if (nullptr == m_Network)
+		{
+			std::cout << "network 클래스 생성 실패\n";
+			throw 0;
+		}
+		m_Network->Setup();
+	}
+	catch (int e)
+	{
+		return;
+	}
+}
+
+void ClientApp::StartApp()
+{
+}

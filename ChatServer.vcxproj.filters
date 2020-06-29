@@ -25,6 +25,9 @@
     <Filter Include="소스 파일\Util">
       <UniqueIdentifier>{c1cf3543-45d6-40d1-be36-37d14c77cc51}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\CHAT">
+      <UniqueIdentifier>{606ff56f-6a90-4315-83f8-cfe78d91374a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source\ChatServer.cpp">
@@ -42,6 +45,15 @@
     <ClCompile Include="Source\Util.cpp">
       <Filter>소스 파일\Util</Filter>
     </ClCompile>
+    <ClCompile Include="Source\Output.cpp">
+      <Filter>소스 파일\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Database.cpp">
+      <Filter>소스 파일\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\MainChat.cpp">
+      <Filter>소스 파일\CHAT</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\Precompiled.h">
@@ -55,6 +67,18 @@
     </ClInclude>
     <ClInclude Include="Source\Util.h">
       <Filter>소스 파일\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Output.h">
+      <Filter>소스 파일\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Database.h">
+      <Filter>소스 파일\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Singleton.h">
+      <Filter>소스 파일\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\MainChat.h">
+      <Filter>소스 파일\CHAT</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

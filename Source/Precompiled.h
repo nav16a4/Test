@@ -6,7 +6,13 @@
 #include <iostream>
 #include <chrono>
 #include <sstream>
+#include <functional>
+#include <thread>
+#include <vector>
+
 #include <WinSock2.h>
+#include <WS2tcpip.h>
+#include "Singleton.h"
 #include "Util.h"
 
 
